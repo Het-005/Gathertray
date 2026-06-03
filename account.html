@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Account</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="account">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./demo.html">Demo Hub</a>
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./marketplace.html">Browse restaurants</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Accounts</p>
+          <h1>Sign in as a customer, restaurant, or admin.</h1>
+          <p class="hero-text">This is the local account layer for testing role-based experiences and order history.</p>
+        </div>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="login-form">
+          <label>
+            <span>Email</span>
+            <input id="login-email" type="email" placeholder="buyer@gathertray.local">
+          </label>
+          <label>
+            <span>Password</span>
+            <input id="login-password" type="password" placeholder="Enter password">
+          </label>
+          <button class="button button-primary full-width" id="login-submit" type="submit">Sign in</button>
+          <div class="detail-card full-width">
+            <p class="mini-label">Demo accounts</p>
+            <p>`admin@gathertray.local` / `admin123`</p>
+            <p>`buyer@gathertray.local` / `buyer123`</p>
+            <p>`bhatel@gathertray.local` / `restaurant123`</p>
+          </div>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Session</p>
+          <h3 id="account-role-title">Not signed in</h3>
+          <div id="account-session-card" class="detail-card">
+            <p>Sign in to see order history, restaurant management shortcuts, or admin access.</p>
+          </div>
+          <p id="account-session-summary">Sign in to review and manage active sessions.</p>
+          <div class="issue-grid compact-issue-grid" id="account-session-list"></div>
+          <button class="button button-subtle full-width" id="revoke-other-sessions" type="button" hidden>Sign out other sessions</button>
+          <button class="button button-secondary full-width" id="logout-button" type="button">Log out</button>
+        </aside>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="signup-form">
+          <label>
+            <span>Name</span>
+            <input id="signup-name" type="text" placeholder="Your full name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="signup-email" type="email" placeholder="you@company.com">
+          </label>
+          <label>
+            <span>Password</span>
+            <input id="signup-password" type="password" placeholder="At least 6 characters">
+          </label>
+          <label>
+            <span>Account type</span>
+            <select id="signup-role">
+              <option value="customer">Customer</option>
+              <option value="restaurant">Restaurant</option>
+            </select>
+          </label>
+          <button class="button button-primary full-width" id="signup-submit" type="submit">Create account</button>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Self-serve signup</p>
+          <h3>Create a local GatherTray account</h3>
+          <div class="detail-card" id="signup-result-card">
+            <p>Customers can sign up directly here. Restaurant signup creates a role account, but marketplace activation still depends on admin approval of a restaurant application.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block order-layout" id="profile-block" hidden>
+        <form class="form-panel" id="profile-form">
+          <label>
+            <span>Full name</span>
+            <input id="profile-name" type="text" placeholder="Your full name">
+          </label>
+          <button class="button button-primary full-width" id="profile-submit" type="submit">Save profile</button>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Profile</p>
+          <h3>Keep your account details current</h3>
+          <div class="detail-card" id="profile-result-card">
+            <p>Sign in to update your account name and keep customer, restaurant, or admin access current.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block order-layout" id="password-block" hidden>
+        <form class="form-panel" id="password-form">
+          <label>
+            <span>Current password</span>
+            <input id="current-password" type="password" placeholder="Current password">
+          </label>
+          <label>
+            <span>New password</span>
+            <input id="new-password" type="password" placeholder="At least 8 characters">
+          </label>
+          <label>
+            <span>Confirm new password</span>
+            <input id="confirm-password" type="password" placeholder="Re-enter new password">
+          </label>
+          <button class="button button-primary full-width" id="password-submit" type="submit">Update password</button>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Security</p>
+          <h3>Change your password</h3>
+          <div class="detail-card" id="password-result-card">
+            <p>Use a stronger password before sharing the product with testers or restaurant partners.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block" id="customer-history-block" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Customer history</p>
+          <h2>Your saved orders</h2>
+        </div>
+        <div class="table-like" id="customer-orders"></div>
+      </section>
+
+      <section class="section-block" id="favorites-block" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Favorites</p>
+          <h2>Your saved restaurants</h2>
+        </div>
+        <div class="restaurant-grid" id="favorite-restaurants"></div>
+      </section>
+
+      <section class="section-block" id="saved-searches-block" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Saved searches</p>
+          <h2>Your marketplace shortcuts</h2>
+        </div>
+        <div class="issue-grid" id="saved-searches-list"></div>
+      </section>
+
+      <section class="section-block" id="restaurant-account-block" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Restaurant readiness</p>
+          <h2>Your merchant setup status</h2>
+          <p class="hero-text">Use this as the quick status view for website connection, menu import, and listing health.</p>
+        </div>
+        <div class="issue-grid" id="restaurant-account-status"></div>
+      </section>
+
+      <section class="section-block" id="notifications-block" hidden>
+        <div class="section-heading notifications-heading">
+          <div>
+            <p class="eyebrow">Notifications</p>
+            <h2>Recent activity</h2>
+            <p class="hero-text" id="notification-summary">Activity across orders, support, and approvals.</p>
+          </div>
+          <div class="row-actions">
+            <button class="button button-subtle" id="mark-all-notifications-read" type="button">Mark all read</button>
+          </div>
+        </div>
+        <div class="issue-grid" id="account-notifications"></div>
+      </section>
+
+      <section class="section-block order-layout" id="support-block" hidden>
+        <form class="form-panel" id="support-form">
+          <label>
+            <span>Related order</span>
+            <select id="support-order"></select>
+          </label>
+          <label>
+            <span>Priority</span>
+            <select id="support-priority">
+              <option value="Low">Low</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="High">High</option>
+            </select>
+          </label>
+          <label class="full-width">
+            <span>Issue details</span>
+            <textarea id="support-issue" rows="5" placeholder="Tell GatherTray support what went wrong or what needs follow-up."></textarea>
+          </label>
+          <button class="button button-primary full-width" id="support-submit" type="submit">Open support ticket</button>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Support</p>
+          <h3>Your support tickets</h3>
+          <div class="detail-card" id="support-result-card">
+            <p>Open a ticket tied to an order and it will appear in the admin operations queue.</p>
+          </div>
+          <div class="issue-grid compact-grid" id="support-issues"></div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

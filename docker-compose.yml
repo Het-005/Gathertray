@@ -1,0 +1,14 @@
+services:
+  gathertray:
+    build: .
+    ports:
+      - "4567:4567"
+    environment:
+      PORT: "4567"
+      GATHERTRAY_BIND: "0.0.0.0"
+      GATHERTRAY_DATA_FILE: "/app/runtime/store.json"
+    volumes:
+      - gathertray_data:/app/runtime
+
+volumes:
+  gathertray_data:

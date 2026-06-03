@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Restaurant</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="restaurant">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./order.html">Start order</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Restaurant profile</p>
+          <h1 id="restaurant-name">Restaurant</h1>
+          <p class="hero-text" id="restaurant-description">GatherTray restaurant details and menu packages.</p>
+        </div>
+      </section>
+
+      <section class="section-block restaurant-layout">
+        <article class="detail-card">
+          <p class="mini-label">Marketplace details</p>
+          <div class="detail-grid">
+            <div><span>Cuisine</span><strong id="restaurant-cuisine"></strong></div>
+            <div><span>Neighborhood</span><strong id="restaurant-neighborhood"></strong></div>
+            <div><span>Delivery fee</span><strong id="restaurant-delivery"></strong></div>
+            <div><span>Minimum</span><strong id="restaurant-minimum"></strong></div>
+            <div><span>Lead time</span><strong id="restaurant-lead-time"></strong></div>
+            <div><span>Setup</span><strong id="restaurant-setup"></strong></div>
+            <div><span>Website</span><strong id="restaurant-website"></strong></div>
+            <div><span>Unavailable dates</span><strong id="restaurant-blackout-dates"></strong></div>
+            <div><span>Listing status</span><strong id="restaurant-listing-status"></strong></div>
+          </div>
+          <div class="tag-row" id="restaurant-tags"></div>
+        </article>
+
+        <aside class="detail-card aside-card">
+          <p class="mini-label">Trust signals</p>
+          <div class="trust-stat"><span>Rating</span><strong id="restaurant-rating"></strong></div>
+          <div class="trust-stat"><span>Reviews</span><strong id="restaurant-reviews"></strong></div>
+          <div class="trust-stat"><span>Delivery radius</span><strong id="restaurant-radius"></strong></div>
+          <a class="button button-primary full-width" id="restaurant-order-link" href="./order.html">Order from this restaurant</a>
+          <button class="button button-secondary full-width" id="restaurant-favorite-button" type="button">Save restaurant</button>
+          <p id="restaurant-favorite-status"></p>
+        </aside>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Menu packages</p>
+          <h2>Built for office catering</h2>
+          <p class="hero-text" id="restaurant-import-note">Menu package details are curated for GatherTray ordering.</p>
+        </div>
+        <div class="package-grid" id="restaurant-packages"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Customer reviews</p>
+          <h2>Recent feedback</h2>
+        </div>
+        <div class="issue-grid" id="restaurant-recent-reviews"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

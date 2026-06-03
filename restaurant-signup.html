@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Restaurant Signup</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="restaurant-signup">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./admin-dashboard.html">Admin queue</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Merchant onboarding</p>
+          <h1>Restaurants can apply, upload menus and docs, and wait for approval.</h1>
+          <p class="hero-text">This is the partner acquisition flow. Restaurants submit business details, menu pricing, and required compliance files before going live on GatherTray.</p>
+        </div>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="restaurant-signup-form">
+          <label>
+            <span>Business name</span>
+            <input id="business-name" type="text" required placeholder="Restaurant or catering brand">
+          </label>
+          <label>
+            <span>Owner / manager name</span>
+            <input id="owner-name" type="text" required placeholder="Primary contact">
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="owner-email" type="email" required placeholder="name@restaurant.com">
+          </label>
+          <label>
+            <span>Phone</span>
+            <input id="owner-phone" type="text" placeholder="(555) 555-5555">
+          </label>
+          <label>
+            <span>Website</span>
+            <input id="restaurant-website" type="url" placeholder="https://yourrestaurant.com/catering">
+          </label>
+          <label>
+            <span>Cuisine</span>
+            <input id="cuisine" type="text" required placeholder="Mediterranean, Indian, Sandwiches...">
+          </label>
+          <label>
+            <span>City / neighborhood</span>
+            <input id="city" type="text" required placeholder="Baltimore">
+          </label>
+          <label>
+            <span>Delivery radius</span>
+            <input id="delivery-radius" type="text" placeholder="20 miles">
+          </label>
+          <label>
+            <span>Minimum order</span>
+            <input id="minimum-order" type="number" min="0" step="0.01" placeholder="150">
+          </label>
+          <label class="form-span">
+            <span>Business description</span>
+            <textarea id="restaurant-description-input" rows="4" required placeholder="What do you sell, what events are you best for, and why should GatherTray approve you?"></textarea>
+          </label>
+          <label class="form-span">
+            <span>Menu packages</span>
+            <p class="field-hint">You can paste packages manually or import draft pricing from your website before submitting.</p>
+            <textarea id="package-lines" rows="5" required placeholder="One package per line: Mediterranean Box Lunch | 15.95 | 10-80&#10;Executive Mezze Spread | 18.50 | 12-120"></textarea>
+          </label>
+          <div class="form-span portal-import-row">
+            <button class="button button-secondary" id="signup-import-menu" type="button">Import draft menu from website</button>
+            <div class="detail-card" id="signup-import-status">
+              <p>Add your website and import likely menu lines with pricing into the package field. You can edit everything before submitting.</p>
+            </div>
+          </div>
+          <label>
+            <span>Menu upload</span>
+            <input id="menu-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+          </label>
+          <label>
+            <span>W-9 upload</span>
+            <input id="w9-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+          </label>
+          <label>
+            <span>Insurance / COI upload</span>
+            <input id="coi-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+          </label>
+          <label>
+            <span>Health permit upload</span>
+            <input id="permit-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+          </label>
+          <button class="button button-primary full-width" id="restaurant-signup-submit" type="submit">Submit for approval</button>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Approval checklist</p>
+          <h3>What GatherTray reviews</h3>
+          <ul class="plain-list">
+            <li>Menu fit for office catering</li>
+            <li>Clear per-person pricing and guest ranges</li>
+            <li>Website and menu source quality</li>
+            <li>Delivery radius and minimums</li>
+            <li>W-9, insurance, and health permit files</li>
+            <li>Brand quality and operational reliability</li>
+          </ul>
+          <div class="payout-box">
+            <span>After approval</span>
+            <strong>Marketplace live</strong>
+            <p>The restaurant becomes searchable in the marketplace and eligible for order requests.</p>
+          </div>
+          <div class="summary-panel" id="restaurant-signup-result" hidden>
+            <pre id="restaurant-signup-output"></pre>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="restaurant-status-form">
+          <label class="form-span">
+            <span>Application email</span>
+            <input id="restaurant-status-email" type="email" placeholder="name@restaurant.com">
+          </label>
+          <button class="button button-secondary full-width" id="restaurant-status-submit" type="submit">Check application status</button>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Application tracker</p>
+          <h3>See your review status</h3>
+          <div class="detail-card" id="restaurant-status-card">
+            <p>Enter the same email used on your application to see whether your restaurant is pending review, needs changes, has been approved, or was rejected.</p>
+          </div>
+          <div class="issue-grid compact-grid" id="restaurant-status-results"></div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

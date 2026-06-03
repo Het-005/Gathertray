@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Order Builder</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="order">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./demo.html">Demo Hub</a>
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./marketplace.html">Browse restaurants</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Order builder</p>
+          <h1>Configure a real GatherTray catering request.</h1>
+          <p class="hero-text">Set your budget, guest count, and event details on the left and GatherTray will build the quote around that target on the right.</p>
+        </div>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="order-form">
+          <label>
+            <span>Restaurant</span>
+            <select id="restaurant-select"></select>
+          </label>
+          <label>
+            <span>Guest count</span>
+            <input id="guest-count" type="number" min="8" value="24">
+          </label>
+          <label>
+            <span>Budget approach</span>
+            <p class="field-hint">Choose a total or per-person budget and we will shape the quote around that target.</p>
+            <input id="price-per-person" type="hidden" value="16.95">
+          </label>
+          <label>
+            <span>Budget mode</span>
+            <select id="budget-mode">
+              <option value="per-person">Per-person budget</option>
+              <option value="total">Total budget</option>
+            </select>
+          </label>
+          <label>
+            <span>Delivery type</span>
+            <select id="delivery-type">
+              <option value="delivery">Delivery</option>
+              <option value="pickup">Pickup</option>
+            </select>
+          </label>
+          <label>
+            <span>Event date</span>
+            <input id="event-date" type="date">
+          </label>
+          <label>
+            <span>Event time</span>
+            <input id="event-time" type="time" value="12:00">
+          </label>
+          <label>
+            <span>Event type</span>
+            <select id="event-type">
+              <option>Office lunch</option>
+              <option>Board meeting</option>
+              <option>Recruiting event</option>
+              <option>Training session</option>
+              <option>Client presentation</option>
+            </select>
+          </label>
+          <label>
+            <span>Budget amount</span>
+            <input id="budget-amount" type="number" min="0" step="0.01" value="18.00">
+          </label>
+          <label class="form-span">
+            <span>Customer name</span>
+            <input id="customer-name" type="text" placeholder="Office manager or team lead">
+          </label>
+          <label class="form-span">
+            <span>Customer email</span>
+            <input id="customer-email" type="email" placeholder="you@company.com">
+          </label>
+          <label class="form-span">
+            <span>Dietary notes</span>
+            <textarea id="dietary-notes" rows="4" placeholder="Vegetarian, gluten-free, boxed lunches, setup needed..."></textarea>
+          </label>
+        </form>
+
+        <aside class="quote-panel">
+          <p class="mini-label">Live quote</p>
+          <h3>GatherTray quote</h3>
+          <div class="quote-list">
+            <div><span>Budget target</span><strong id="budget-output"></strong></div>
+            <div><span>Suggested food spend</span><strong id="suggested-food-output"></strong></div>
+            <div><span>Food subtotal</span><strong id="subtotal-output"></strong></div>
+            <div><span>Delivery fee</span><strong id="delivery-output"></strong></div>
+            <div><span>Service fee</span><strong id="service-output"></strong></div>
+            <div><span>Processing</span><strong id="processing-output"></strong></div>
+            <div class="quote-total"><span>Customer total</span><strong id="customer-total-output"></strong></div>
+          </div>
+          <div class="payout-box">
+            <span>Restaurant payout</span>
+            <strong id="payout-output"></strong>
+            <p id="payout-summary"></p>
+            <p id="budget-summary"></p>
+          </div>
+          <button class="button button-primary full-width" id="summary-button" type="button">Generate request summary</button>
+        </aside>
+      </section>
+
+      <section class="section-block summary-panel" id="summary-panel" hidden>
+        <p class="mini-label">Generated request</p>
+        <pre id="summary-output"></pre>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

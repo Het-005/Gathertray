@@ -1,0 +1,10 @@
+{
+  "name": "GatherTray",
+  "short_name": "GatherTray",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f2e8",
+  "theme_color": "#1e1d18",
+  "description": "Office catering marketplace for customers, restaurants, and operators.",
+  "icons": []
+}

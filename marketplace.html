@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Marketplace</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="marketplace">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./demo.html">Demo Hub</a>
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./order.html">Start order</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Customer marketplace</p>
+          <h1>Find catering that fits the event, budget, and delivery window.</h1>
+          <p class="hero-text">This page is the buyer-facing marketplace where admins discover restaurants and start larger office orders.</p>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="marketplace-layout">
+          <aside class="search-sidebar">
+            <div class="filter-bar filter-stack">
+              <label>
+                <span>Delivery ZIP code</span>
+                <input id="zip-filter" type="text" inputmode="numeric" placeholder="21117">
+              </label>
+              <label>
+                <span>Cuisine</span>
+                <select id="cuisine-filter">
+                  <option value="all">All cuisines</option>
+                </select>
+              </label>
+              <label>
+                <span>Guest count</span>
+                <input id="guest-filter" type="number" min="1" placeholder="24">
+              </label>
+              <label>
+                <span>Event date</span>
+                <input id="event-date-filter" type="date">
+              </label>
+              <label>
+                <span>Budget mode</span>
+                <select id="budget-mode-filter">
+                  <option value="per-person">Per-person budget</option>
+                  <option value="total">Total budget</option>
+                </select>
+              </label>
+              <label>
+                <span>Budget</span>
+                <input id="budget-filter" type="number" min="0" step="0.01" placeholder="18">
+              </label>
+              <label>
+                <span>Delivery option</span>
+                <select id="delivery-mode-filter">
+                  <option value="all">Any option</option>
+                  <option value="delivery">Delivery</option>
+                  <option value="pickup">Pickup</option>
+                  <option value="buffet setup">Buffet setup</option>
+                  <option value="full setup">Full setup</option>
+                </select>
+              </label>
+              <label>
+                <span>Occasion</span>
+                <select id="occasion-filter">
+                  <option value="all">Any occasion</option>
+                </select>
+              </label>
+              <label>
+                <span>Max minimum</span>
+                <select id="minimum-filter">
+                  <option value="1000">Any minimum</option>
+                  <option value="150">$150 or less</option>
+                  <option value="200">$200 or less</option>
+                  <option value="300">$300 or less</option>
+                </select>
+              </label>
+            </div>
+          </aside>
+          <div class="search-results-panel">
+            <div class="search-results-header">
+              <div>
+                <p class="mini-label">Search results</p>
+                <h2 id="results-title">Matching restaurants</h2>
+                <div class="section-toolbar">
+                  <input id="saved-search-name" type="text" placeholder="Name this search">
+                  <button class="button button-secondary" id="save-search-button" type="button">Save search</button>
+                </div>
+                <div class="chip-row" id="saved-searches"></div>
+              </div>
+              <div class="search-results-tools">
+                <p id="results-count" class="results-count"></p>
+                <p id="favorite-hint" class="results-count"></p>
+                <label>
+                  <span>Sort</span>
+                  <select id="sort-filter">
+                    <option value="recommended">Recommended</option>
+                    <option value="rating">Top rated</option>
+                    <option value="price-low">Best budget fit</option>
+                    <option value="minimum-low">Lowest minimum</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="search-results-list" id="marketplace-grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

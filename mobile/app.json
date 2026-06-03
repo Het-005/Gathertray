@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "GatherTray",
+    "slug": "gathertray-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f6efe2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gathertray.app"
+    },
+    "android": {
+      "package": "com.gathertray.app"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

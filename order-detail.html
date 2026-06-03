@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Order Detail</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="order-detail">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./account.html">Back to account</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Order detail</p>
+          <h1 id="order-detail-title">Order</h1>
+          <p class="hero-text" id="order-detail-subtitle">Protected order details for customers, restaurants, and admins.</p>
+        </div>
+      </section>
+
+      <section class="section-block restaurant-layout">
+        <article class="detail-card">
+          <p class="mini-label">Order snapshot</p>
+          <div class="detail-grid" id="order-detail-grid"></div>
+        </article>
+        <aside class="detail-card">
+          <p class="mini-label">Notes</p>
+          <div id="order-detail-notes"></div>
+        </aside>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Order activity</p>
+          <h2>Lifecycle timeline</h2>
+          <p class="hero-text">Track request intake, status changes, support, and review activity in one place.</p>
+        </div>
+        <div class="issue-grid compact-grid" id="order-timeline-list"></div>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="order-issue-form">
+          <label>
+            <span>Priority</span>
+            <select id="order-issue-priority">
+              <option value="Low">Low</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="High">High</option>
+            </select>
+          </label>
+          <label class="full-width">
+            <span>Support request</span>
+            <textarea id="order-issue-text" rows="5" placeholder="Example: arrival window needs confirmation, refund request, delivery issue, missing setup item."></textarea>
+          </label>
+          <button class="button button-primary full-width" id="order-issue-submit" type="submit">Open support ticket for this order</button>
+        </form>
+        <aside class="detail-card">
+          <p class="mini-label">Support queue</p>
+          <div id="order-issues-list"></div>
+        </aside>
+      </section>
+
+      <section class="section-block order-layout">
+        <form class="form-panel" id="order-review-form">
+          <label>
+            <span>Rating</span>
+            <select id="order-review-rating">
+              <option value="5">5 stars</option>
+              <option value="4">4 stars</option>
+              <option value="3">3 stars</option>
+              <option value="2">2 stars</option>
+              <option value="1">1 star</option>
+            </select>
+          </label>
+          <label class="full-width">
+            <span>Review</span>
+            <textarea id="order-review-comment" rows="5" placeholder="How did the order go? Food quality, delivery, setup, portions, and overall experience."></textarea>
+          </label>
+          <button class="button button-primary full-width" id="order-review-submit" type="submit">Submit review</button>
+        </form>
+        <aside class="detail-card">
+          <p class="mini-label">Review status</p>
+          <div id="order-review-status">
+            <p>Completed customer orders can be reviewed once.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

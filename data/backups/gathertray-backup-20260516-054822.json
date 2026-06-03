@@ -1,0 +1,1501 @@
+{
+  "meta": {
+    "generatedAt": "2026-05-16T05:48:22Z",
+    "latestActivityAt": "2026-05-16T05:45:40Z",
+    "counts": {
+      "restaurants": 8,
+      "orders": 7,
+      "applications": 7,
+      "users": 10,
+      "issues": 4,
+      "reviews": 1,
+      "notifications": 12,
+      "emails": 14,
+      "auditLogs": 4
+    },
+    "format": "gathertray-admin-backup-v1",
+    "includesSensitiveAuthData": false
+  },
+  "restaurants": [
+    {
+      "slug": "approval-audit-kitchen",
+      "name": "Approval Audit Kitchen",
+      "ownerUserId": "USR-2010",
+      "cuisine": "Indian",
+      "neighborhood": "Jersey City",
+      "rating": 5.0,
+      "reviews": 0,
+      "deliveryFee": 18,
+      "minimum": 250.0,
+      "deliveryRadius": "12 miles",
+      "zipCodes": [
+
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup"
+      ],
+      "occasions": [
+        "office lunch"
+      ],
+      "commission": 0.06,
+      "perPerson": 9.75,
+      "leadTime": "24 hours",
+      "leadTimeHours": 24,
+      "setup": "Pending setup review",
+      "description": "Website-backed test app",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "listingStatus": "active",
+      "pauseReason": "",
+      "blackoutDates": [
+
+      ],
+      "packages": [
+        {
+          "name": "Executive Lunch Buffet",
+          "price": 17.95,
+          "serves": "Serves 10-20"
+        },
+        {
+          "name": "Vegetarian Box Lunch",
+          "price": 14.5,
+          "serves": "Serves 8-25"
+        },
+        {
+          "name": "Continental Breakfast Tray",
+          "price": 12.25,
+          "serves": "Serves 12-18"
+        },
+        {
+          "name": "Afternoon Chaat Break",
+          "price": 9.75,
+          "serves": "Serves 15-30"
+        }
+      ],
+      "menuImportSource": "http://127.0.0.1:4567/demo-menu-source.html",
+      "menuImportNote": "Imported 4 package(s) automatically during approval. Restaurants can still edit pricing in the portal.",
+      "menuImportedAt": "2026-05-12T12:23:07Z",
+      "menuImportCount": 4,
+      "tags": [
+        "Pending first orders",
+        "Approved vendor",
+        "New on GatherTray"
+      ],
+      "documents": [
+        {
+          "label": "Business License",
+          "name": "license.pdf",
+          "type": "application/pdf",
+          "size": 1024,
+          "content": "demo"
+        }
+      ],
+      "contactEmail": "approval-audit-kitchen@gathertray.local",
+      "contactPhone": "555-210-7788",
+      "baseRating": 5.0,
+      "baseReviews": 0
+    },
+    {
+      "slug": "audit-trail-kitchen",
+      "name": "Audit Trail Kitchen",
+      "ownerUserId": "USR-2009",
+      "cuisine": "Mediterranean",
+      "neighborhood": "Baltimore",
+      "rating": 5.0,
+      "reviews": 0,
+      "deliveryFee": 18,
+      "minimum": 190.0,
+      "deliveryRadius": "12 miles",
+      "zipCodes": [
+
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup"
+      ],
+      "occasions": [
+        "office lunch"
+      ],
+      "commission": 0.06,
+      "perPerson": 9.75,
+      "leadTime": "24 hours",
+      "leadTimeHours": 24,
+      "setup": "Pending setup review",
+      "description": "Audit log smoke test.",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "listingStatus": "active",
+      "pauseReason": "",
+      "blackoutDates": [
+
+      ],
+      "packages": [
+        {
+          "name": "Executive Lunch Buffet",
+          "price": 17.95,
+          "serves": "Serves 10-20"
+        },
+        {
+          "name": "Vegetarian Box Lunch",
+          "price": 14.5,
+          "serves": "Serves 8-25"
+        },
+        {
+          "name": "Continental Breakfast Tray",
+          "price": 12.25,
+          "serves": "Serves 12-18"
+        },
+        {
+          "name": "Afternoon Chaat Break",
+          "price": 9.75,
+          "serves": "Serves 15-30"
+        }
+      ],
+      "menuImportSource": "http://127.0.0.1:4567/demo-menu-source.html",
+      "menuImportNote": "Imported 4 package(s) automatically during approval. Restaurants can still edit pricing in the portal.",
+      "menuImportedAt": "2026-05-12T12:17:08Z",
+      "menuImportCount": 4,
+      "tags": [
+        "Pending first orders",
+        "Approved vendor",
+        "New on GatherTray"
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "contactEmail": "audit-trail-kitchen@gathertray.local",
+      "contactPhone": "555-333-5555",
+      "baseRating": 5.0,
+      "baseReviews": 0
+    },
+    {
+      "slug": "persist-import-status-kitchen",
+      "name": "Persist Import Status Kitchen",
+      "ownerUserId": "USR-2008",
+      "cuisine": "Indian",
+      "neighborhood": "Baltimore",
+      "rating": 5.0,
+      "reviews": 0,
+      "deliveryFee": 18,
+      "minimum": 180.0,
+      "deliveryRadius": "10 miles",
+      "zipCodes": [
+
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup"
+      ],
+      "occasions": [
+        "office lunch"
+      ],
+      "commission": 0.06,
+      "perPerson": 9.75,
+      "leadTime": "24 hours",
+      "leadTimeHours": 24,
+      "setup": "Pending setup review",
+      "description": "Persist import status smoke test.",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "listingStatus": "active",
+      "pauseReason": "",
+      "blackoutDates": [
+
+      ],
+      "packages": [
+        {
+          "name": "Executive Lunch Buffet",
+          "price": 17.95,
+          "serves": "Serves 10-20"
+        },
+        {
+          "name": "Vegetarian Box Lunch",
+          "price": 14.5,
+          "serves": "Serves 8-25"
+        },
+        {
+          "name": "Continental Breakfast Tray",
+          "price": 12.25,
+          "serves": "Serves 12-18"
+        },
+        {
+          "name": "Afternoon Chaat Break",
+          "price": 9.75,
+          "serves": "Serves 15-30"
+        }
+      ],
+      "menuImportSource": "http://127.0.0.1:4567/demo-menu-source.html",
+      "menuImportNote": "Imported 4 package(s) automatically during approval. Restaurants can still edit pricing in the portal.",
+      "menuImportedAt": "2026-05-06T05:35:55Z",
+      "menuImportCount": 4,
+      "tags": [
+        "Pending first orders",
+        "Approved vendor",
+        "New on GatherTray"
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "contactEmail": "persist-import-status@gathertray.local",
+      "contactPhone": "555-222-4444",
+      "baseRating": 5.0,
+      "baseReviews": 0
+    },
+    {
+      "slug": "auto-import-test-kitchen",
+      "name": "Auto Import Test Kitchen",
+      "ownerUserId": "USR-2007",
+      "cuisine": "Indian",
+      "neighborhood": "Baltimore",
+      "rating": 5.0,
+      "reviews": 0,
+      "deliveryFee": 18,
+      "minimum": 180.0,
+      "deliveryRadius": "10 miles",
+      "zipCodes": [
+
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup"
+      ],
+      "occasions": [
+        "office lunch"
+      ],
+      "commission": 0.06,
+      "perPerson": 9.75,
+      "leadTime": "24 hours",
+      "leadTimeHours": 24,
+      "setup": "Pending setup review",
+      "description": "Approval import smoke test.",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "listingStatus": "active",
+      "pauseReason": "",
+      "blackoutDates": [
+
+      ],
+      "packages": [
+        {
+          "name": "Executive Lunch Buffet",
+          "price": 17.95,
+          "serves": "Serves 10-20"
+        },
+        {
+          "name": "Vegetarian Box Lunch",
+          "price": 14.5,
+          "serves": "Serves 8-25"
+        },
+        {
+          "name": "Continental Breakfast Tray",
+          "price": 12.25,
+          "serves": "Serves 12-18"
+        },
+        {
+          "name": "Afternoon Chaat Break",
+          "price": 9.75,
+          "serves": "Serves 15-30"
+        }
+      ],
+      "menuImportSource": "http://127.0.0.1:4567/demo-menu-source.html",
+      "menuImportNote": "Imported 4 package(s) automatically during approval. Restaurants can still edit pricing in the portal.",
+      "menuImportedAt": "2026-05-04T04:38:58Z",
+      "menuImportCount": 4,
+      "tags": [
+        "Pending first orders",
+        "Approved vendor",
+        "New on GatherTray"
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "contactEmail": "auto-import-test@gathertray.local",
+      "contactPhone": "555-111-3333",
+      "baseRating": 5.0,
+      "baseReviews": 0
+    },
+    {
+      "slug": "bhatel-republic",
+      "name": "Bhatel Republic",
+      "ownerUserId": "USR-2003",
+      "cuisine": "Mediterranean",
+      "neighborhood": "Owings Mills",
+      "rating": 4.9,
+      "reviews": 128,
+      "deliveryFee": 18,
+      "minimum": 150,
+      "deliveryRadius": "45 miles",
+      "zipCodes": [
+        "21117",
+        "21208",
+        "21209",
+        "21093",
+        "21204"
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup"
+      ],
+      "occasions": [
+        "office lunch",
+        "team meeting",
+        "boxed lunches"
+      ],
+      "commission": 0.06,
+      "perPerson": 9.75,
+      "leadTime": "4 hours",
+      "setup": "Drop-off and light setup",
+      "description": "Fresh Mediterranean spreads, boxed lunches, bowls, and mezze platters that travel well for office catering.",
+      "packages": [
+        {
+          "name": "Executive Lunch Buffet",
+          "price": 17.95,
+          "serves": "Serves 10-20"
+        },
+        {
+          "name": "Vegetarian Box Lunch",
+          "price": 14.5,
+          "serves": "Serves 8-25"
+        },
+        {
+          "name": "Continental Breakfast Tray",
+          "price": 12.25,
+          "serves": "Serves 12-18"
+        },
+        {
+          "name": "Afternoon Chaat Break",
+          "price": 9.75,
+          "serves": "Serves 15-30"
+        }
+      ],
+      "tags": [
+        "Healthy",
+        "Individually boxed",
+        "Vegetarian-friendly"
+      ],
+      "blackoutDates": [
+        "2026-04-25",
+        "2026-04-26"
+      ],
+      "listingStatus": "active",
+      "pauseReason": "",
+      "baseRating": 4.9,
+      "baseReviews": 128,
+      "leadTimeHours": 4,
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "menuImportSource": "http://127.0.0.1:4567/demo-menu-source.html",
+      "menuImportNote": "Imported 4 package(s) from restaurant website. Pricing remains editable in the portal.",
+      "menuImportedAt": "2026-04-30T08:04:48Z",
+      "menuImportCount": 4
+    },
+    {
+      "slug": "bricklane-tandoor",
+      "name": "Bricklane Tandoor",
+      "ownerUserId": "USR-2004",
+      "cuisine": "Indian",
+      "neighborhood": "Towson",
+      "rating": 4.8,
+      "reviews": 93,
+      "deliveryFee": 22,
+      "minimum": 200,
+      "deliveryRadius": "35 miles",
+      "zipCodes": [
+        "21204",
+        "21286",
+        "21234",
+        "21236",
+        "21237"
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup",
+        "buffet setup"
+      ],
+      "occasions": [
+        "office lunch",
+        "training",
+        "buffet"
+      ],
+      "commission": 0.06,
+      "perPerson": 17.25,
+      "leadTime": "6 hours",
+      "setup": "Buffet setup available",
+      "description": "Buffet-driven Indian catering with flexible vegetarian menus, strong portioning, and great hot food performance.",
+      "packages": [
+        {
+          "name": "Tandoori Lunch Buffet",
+          "price": 17.25,
+          "serves": "15-180"
+        },
+        {
+          "name": "Vegetarian Feast",
+          "price": 16.4,
+          "serves": "15-160"
+        },
+        {
+          "name": "Executive Curry Spread",
+          "price": 19.1,
+          "serves": "20-200"
+        }
+      ],
+      "tags": [
+        "Hot buffet",
+        "Vegetarian-heavy",
+        "Executive lunch"
+      ],
+      "blackoutDates": [
+
+      ],
+      "listingStatus": "active",
+      "pauseReason": "",
+      "baseRating": 4.8,
+      "baseReviews": 93,
+      "leadTimeHours": 6,
+      "website": "",
+      "menuImportSource": "",
+      "menuImportNote": "",
+      "menuImportedAt": null,
+      "menuImportCount": 0
+    },
+    {
+      "slug": "cinder-and-sage",
+      "name": "Cinder & Sage",
+      "ownerUserId": "USR-2005",
+      "cuisine": "American",
+      "neighborhood": "Baltimore",
+      "rating": 4.7,
+      "reviews": 61,
+      "deliveryFee": 16,
+      "minimum": 180,
+      "deliveryRadius": "25 miles",
+      "zipCodes": [
+        "21201",
+        "21202",
+        "21230",
+        "21231",
+        "21224"
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup",
+        "full setup"
+      ],
+      "occasions": [
+        "breakfast",
+        "board meeting",
+        "client event"
+      ],
+      "commission": 0.06,
+      "perPerson": 19.8,
+      "leadTime": "12 hours",
+      "setup": "Premium setup and disposables",
+      "description": "Polished American catering for breakfasts, board meetings, and client-facing events that need a premium feel.",
+      "packages": [
+        {
+          "name": "Boardroom Breakfast",
+          "price": 14.75,
+          "serves": "8-60"
+        },
+        {
+          "name": "Harvest Lunch Spread",
+          "price": 19.8,
+          "serves": "10-150"
+        },
+        {
+          "name": "Chef Table Reception",
+          "price": 24.5,
+          "serves": "20-180"
+        }
+      ],
+      "tags": [
+        "Premium",
+        "Breakfast",
+        "Client-facing"
+      ],
+      "blackoutDates": [
+
+      ],
+      "listingStatus": "active",
+      "pauseReason": "",
+      "baseRating": 4.7,
+      "baseReviews": 61,
+      "leadTimeHours": 12,
+      "website": "",
+      "menuImportSource": "",
+      "menuImportNote": "",
+      "menuImportedAt": null,
+      "menuImportCount": 0
+    },
+    {
+      "slug": "greenfork-deli",
+      "name": "GreenFork Deli",
+      "ownerUserId": "USR-2006",
+      "cuisine": "Sandwiches",
+      "neighborhood": "Columbia",
+      "rating": 4.6,
+      "reviews": 74,
+      "deliveryFee": 14,
+      "minimum": 120,
+      "deliveryRadius": "20 miles",
+      "zipCodes": [
+        "21044",
+        "21045",
+        "21046",
+        "21227",
+        "21075"
+      ],
+      "deliveryModes": [
+        "delivery",
+        "pickup"
+      ],
+      "occasions": [
+        "office lunch",
+        "boxed lunches",
+        "budget friendly"
+      ],
+      "commission": 0.06,
+      "perPerson": 13.9,
+      "leadTime": "3 hours",
+      "setup": "Drop-off",
+      "description": "Fast, reliable office lunch trays and boxed sandwich assortments with easy dietary tagging.",
+      "packages": [
+        {
+          "name": "Office Sandwich Tray",
+          "price": 12.9,
+          "serves": "8-60"
+        },
+        {
+          "name": "Boxed Lunch Lineup",
+          "price": 13.9,
+          "serves": "10-120"
+        },
+        {
+          "name": "Salad + Sandwich Combo",
+          "price": 15.2,
+          "serves": "10-80"
+        }
+      ],
+      "tags": [
+        "Fast lead time",
+        "Budget-friendly",
+        "High reorder potential"
+      ],
+      "blackoutDates": [
+
+      ],
+      "listingStatus": "active",
+      "pauseReason": "",
+      "baseRating": 4.6,
+      "baseReviews": 74,
+      "leadTimeHours": 3,
+      "website": "",
+      "menuImportSource": "",
+      "menuImportNote": "",
+      "menuImportedAt": null,
+      "menuImportCount": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "GT-3025",
+      "restaurantSlug": "bhatel-republic",
+      "restaurantName": "Bhatel Republic",
+      "customer": "Unassigned lead",
+      "customerEmail": "",
+      "eventDate": "2026-05-07",
+      "eventTime": "12:00",
+      "eventType": "Office lunch",
+      "guests": 24,
+      "perPerson": 18.0,
+      "budgetMode": "per-person",
+      "budgetAmount": 18.0,
+      "budgetTarget": 432.0,
+      "subtotal": 432.0,
+      "deliveryFee": 18.0,
+      "serviceFee": 12.0,
+      "processingFee": 12.83,
+      "customerTotal": 474.83,
+      "restaurantPayout": 406.08,
+      "deliveryType": "delivery",
+      "dietaryNotes": "",
+      "status": "New lead",
+      "timeLabel": "2026-05-07",
+      "createdAt": "2026-04-30T10:30:18Z",
+      "updatedAt": "2026-04-30T10:30:18Z"
+    },
+    {
+      "id": "GT-3024",
+      "restaurantSlug": "bhatel-republic",
+      "restaurantName": "Bhatel Republic",
+      "customer": "Budget Buyer",
+      "customerEmail": "buyer@gathertray.local",
+      "eventDate": "2026-04-23",
+      "eventTime": "12:30",
+      "eventType": "Office lunch",
+      "guests": 20,
+      "perPerson": 15.0,
+      "budgetMode": "total",
+      "budgetAmount": 300.0,
+      "budgetTarget": 300.0,
+      "subtotal": 300.0,
+      "deliveryFee": 18.0,
+      "serviceFee": 12.0,
+      "processingFee": 9.0,
+      "customerTotal": 339.0,
+      "restaurantPayout": 282.0,
+      "deliveryType": "delivery",
+      "dietaryNotes": "Budget-mode smoke test",
+      "status": "New lead",
+      "timeLabel": "2026-04-23",
+      "createdAt": "2026-04-21T03:08:19Z",
+      "updatedAt": "2026-04-21T03:08:19Z"
+    },
+    {
+      "id": "GT-3023",
+      "restaurantSlug": "greenfork-deli",
+      "restaurantName": "GreenFork Deli",
+      "customer": "Buyer User",
+      "customerEmail": "buyer@gathertray.local",
+      "eventDate": "2026-04-22",
+      "eventTime": "12:00",
+      "eventType": "Office lunch",
+      "guests": 18,
+      "perPerson": 14.5,
+      "budgetMode": "per-person",
+      "budgetAmount": 16.0,
+      "budgetTarget": 288.0,
+      "subtotal": 261.0,
+      "deliveryFee": 14.0,
+      "serviceFee": 12.0,
+      "processingFee": 7.87,
+      "customerTotal": 294.87,
+      "restaurantPayout": 245.34,
+      "deliveryType": "delivery",
+      "dietaryNotes": "Vegetarian options requested",
+      "status": "New lead",
+      "timeLabel": "2026-04-22",
+      "createdAt": "2026-04-20T03:39:24Z",
+      "updatedAt": "2026-04-20T03:39:24Z"
+    },
+    {
+      "id": "GT-3022",
+      "restaurantSlug": "bricklane-tandoor",
+      "restaurantName": "Bricklane Tandoor",
+      "customer": "Unassigned lead",
+      "customerEmail": "buyer@gathertray.local",
+      "eventDate": "2026-04-22",
+      "eventType": "Office lunch",
+      "guests": 24,
+      "perPerson": 17.25,
+      "subtotal": 414.0,
+      "deliveryFee": 22.0,
+      "serviceFee": 12.0,
+      "processingFee": 12.31,
+      "customerTotal": 460.31,
+      "restaurantPayout": 389.16,
+      "deliveryType": "delivery",
+      "dietaryNotes": "",
+      "status": "Completed",
+      "timeLabel": "2026-04-22",
+      "createdAt": "2026-04-15T06:26:08Z",
+      "updatedAt": "2026-05-12T12:23:50Z"
+    },
+    {
+      "id": "GT-3021",
+      "restaurantSlug": "bhatel-republic",
+      "restaurantName": "Bhatel Republic",
+      "customer": "Mercury Health Recruiting",
+      "customerEmail": "mercury@healthrecruiting.com",
+      "eventDate": "2026-04-17",
+      "eventType": "Office lunch",
+      "guests": 34,
+      "perPerson": 16.95,
+      "subtotal": 576.3,
+      "deliveryFee": 18,
+      "serviceFee": 19,
+      "processingFee": 17.01,
+      "customerTotal": 630.31,
+      "restaurantPayout": 541.72,
+      "deliveryType": "delivery",
+      "dietaryNotes": "Vegetarian trays and no nuts",
+      "status": "Awaiting confirmation",
+      "timeLabel": "11:30 AM tomorrow",
+      "createdAt": "2026-04-15T01:00:00Z"
+    },
+    {
+      "id": "GT-3018",
+      "restaurantSlug": "bricklane-tandoor",
+      "restaurantName": "Bricklane Tandoor",
+      "customer": "Aster Legal Group",
+      "customerEmail": "events@asterlegal.com",
+      "eventDate": "2026-04-15",
+      "eventType": "Board meeting",
+      "guests": 18,
+      "perPerson": 17.25,
+      "subtotal": 310.5,
+      "deliveryFee": 22,
+      "serviceFee": 12,
+      "processingFee": 9.3,
+      "customerTotal": 353.8,
+      "restaurantPayout": 291.87,
+      "deliveryType": "delivery",
+      "dietaryNotes": "Mild spice level",
+      "status": "Accepted",
+      "timeLabel": "Today 1:00 PM",
+      "createdAt": "2026-04-14T18:10:00Z"
+    },
+    {
+      "id": "GT-3014",
+      "restaurantSlug": "cinder-and-sage",
+      "restaurantName": "Cinder & Sage",
+      "customer": "Hopkins Urology",
+      "customerEmail": "ops@hopkinsurology.com",
+      "eventDate": "2026-04-15",
+      "eventType": "Training session",
+      "guests": 42,
+      "perPerson": 19.8,
+      "subtotal": 831.6,
+      "deliveryFee": 16,
+      "serviceFee": 19,
+      "processingFee": 24.42,
+      "customerTotal": 891.02,
+      "restaurantPayout": 781.7,
+      "deliveryType": "delivery",
+      "dietaryNotes": "Breakfast setup included",
+      "status": "In prep",
+      "timeLabel": "Today 12:15 PM",
+      "createdAt": "2026-04-14T13:25:00Z"
+    }
+  ],
+  "applications": [
+    {
+      "id": "APP-1007",
+      "status": "approved",
+      "businessName": "Approval Audit Kitchen",
+      "ownerName": "Audit Approval Test",
+      "email": "approval-audit-kitchen@gathertray.local",
+      "phone": "555-210-7788",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "cuisine": "Indian",
+      "city": "Jersey City",
+      "deliveryRadius": "12 miles",
+      "minimumOrder": 250.0,
+      "description": "Website-backed test app",
+      "packages": [
+        {
+          "name": "Starter Buffet",
+          "price": 16.5,
+          "serves": "10-20"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Business License",
+          "name": "license.pdf",
+          "type": "application/pdf",
+          "size": 1024,
+          "content": "demo"
+        }
+      ],
+      "reviewNote": "",
+      "importStatusNote": "Imported 4 package(s) automatically from the restaurant website during approval.",
+      "importedPackageCount": 4,
+      "submittedAt": "2026-05-12T12:22:54Z",
+      "approvedAt": "2026-05-12T12:23:07Z",
+      "approvedRestaurantSlug": "approval-audit-kitchen"
+    },
+    {
+      "id": "APP-1006",
+      "status": "approved",
+      "businessName": "Audit Trail Kitchen",
+      "ownerName": "Audit Owner",
+      "email": "audit-trail-kitchen@gathertray.local",
+      "phone": "555-333-5555",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "cuisine": "Mediterranean",
+      "city": "Baltimore",
+      "deliveryRadius": "12 miles",
+      "minimumOrder": 190.0,
+      "description": "Audit log smoke test.",
+      "packages": [
+        {
+          "name": "Seed Package",
+          "price": 14.25,
+          "serves": "8-20"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "reviewNote": "",
+      "importStatusNote": "Imported 4 package(s) automatically from the restaurant website during approval.",
+      "importedPackageCount": 4,
+      "submittedAt": "2026-05-12T12:17:08Z",
+      "approvedAt": "2026-05-12T12:17:08Z",
+      "approvedRestaurantSlug": "audit-trail-kitchen"
+    },
+    {
+      "id": "APP-1005",
+      "status": "approved",
+      "businessName": "Persist Import Status Kitchen",
+      "ownerName": "Status Demo",
+      "email": "persist-import-status@gathertray.local",
+      "phone": "555-222-4444",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "cuisine": "Indian",
+      "city": "Baltimore",
+      "deliveryRadius": "10 miles",
+      "minimumOrder": 180.0,
+      "description": "Persist import status smoke test.",
+      "packages": [
+        {
+          "name": "Seed Package",
+          "price": 13.25,
+          "serves": "8-20"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "reviewNote": "",
+      "importStatusNote": "Imported 4 package(s) automatically from the restaurant website during approval.",
+      "importedPackageCount": 4,
+      "submittedAt": "2026-05-06T05:35:45Z",
+      "approvedAt": "2026-05-06T05:35:55Z",
+      "approvedRestaurantSlug": "persist-import-status-kitchen"
+    },
+    {
+      "id": "APP-1004",
+      "status": "approved",
+      "businessName": "Auto Import Test Kitchen",
+      "ownerName": "Ops Demo",
+      "email": "auto-import-test@gathertray.local",
+      "phone": "555-111-3333",
+      "website": "http://127.0.0.1:4567/demo-menu-source.html",
+      "cuisine": "Indian",
+      "city": "Baltimore",
+      "deliveryRadius": "10 miles",
+      "minimumOrder": 180.0,
+      "description": "Approval import smoke test.",
+      "packages": [
+        {
+          "name": "Seed Package",
+          "price": 13.25,
+          "serves": "8-20"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "reviewNote": "",
+      "submittedAt": "2026-05-04T04:38:50Z",
+      "approvedAt": "2026-05-04T04:38:58Z",
+      "approvedRestaurantSlug": "auto-import-test-kitchen"
+    },
+    {
+      "id": "APP-1003",
+      "status": "pending",
+      "businessName": "Demo Website Kitchen Two",
+      "ownerName": "Demo Owner",
+      "email": "demo-website-kitchen-2@gathertray.local",
+      "phone": "555-100-2001",
+      "website": "https://demowebsitekitchen.example.com/catering",
+      "cuisine": "Mediterranean",
+      "city": "Baltimore",
+      "deliveryRadius": "15 miles",
+      "minimumOrder": 150.0,
+      "description": "Website-enabled demo application for onboarding smoke testing.",
+      "packages": [
+        {
+          "name": "Office Mezze Box",
+          "price": 15.95,
+          "serves": "10-30"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "reviewNote": "",
+      "submittedAt": "2026-05-02T06:53:14Z"
+    },
+    {
+      "id": "APP-1002",
+      "status": "pending",
+      "businessName": "Demo Website Kitchen",
+      "ownerName": "Demo Owner",
+      "email": "demo-website-kitchen@gathertray.local",
+      "phone": "555-100-2000",
+      "cuisine": "Mediterranean",
+      "city": "Baltimore",
+      "deliveryRadius": "15 miles",
+      "minimumOrder": 150.0,
+      "description": "Website-enabled demo application for onboarding smoke testing.",
+      "packages": [
+        {
+          "name": "Office Mezze Box",
+          "price": 15.95,
+          "serves": "10-30"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Menu upload",
+          "name": "menu.pdf",
+          "type": "application/pdf",
+          "size": 1234,
+          "content": "data:application/pdf;base64,QQ=="
+        }
+      ],
+      "reviewNote": "",
+      "submittedAt": "2026-05-02T06:52:58Z"
+    },
+    {
+      "id": "APP-1001",
+      "status": "changes_requested",
+      "businessName": "Sun Mesa Kitchen",
+      "ownerName": "Ariana Flores",
+      "email": "hello@sunmesakitchen.com",
+      "phone": "(410) 555-0181",
+      "cuisine": "Southwest",
+      "city": "Baltimore",
+      "deliveryRadius": "18 miles",
+      "minimumOrder": 175,
+      "perPersonStartingAt": 16.5,
+      "description": "Southwest bowls, breakfast burritos, taco bars, and individually packaged lunch boxes for team meals.",
+      "packages": [
+        {
+          "name": "Fiesta Bowl Lunch",
+          "price": 16.5,
+          "serves": "10-90"
+        },
+        {
+          "name": "Taco Bar",
+          "price": 18.25,
+          "serves": "15-150"
+        }
+      ],
+      "documents": [
+        {
+          "label": "Menu PDF",
+          "name": "sun-mesa-menu.pdf",
+          "type": "application/pdf",
+          "size": 248311
+        },
+        {
+          "label": "W-9",
+          "name": "sun-mesa-w9.pdf",
+          "type": "application/pdf",
+          "size": 88121
+        }
+      ],
+      "submittedAt": "2026-04-15T06:40:00Z",
+      "changesRequestedAt": "2026-04-18T04:26:10Z",
+      "reviewNote": "Please upload full compliance documents and clarify menu package serving ranges."
+    }
+  ],
+  "users": [
+    {
+      "id": "USR-2001",
+      "name": "Admin User",
+      "email": "admin@gathertray.local",
+      "role": "admin",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2002",
+      "name": "Buyer User",
+      "email": "buyer@gathertray.local",
+      "role": "customer",
+      "favorites": [
+        "bhatel-republic"
+      ],
+      "savedSearches": [
+        {
+          "id": "SRCH-1",
+          "name": "Owings Mills lunch",
+          "zip": "21117",
+          "cuisine": "Mediterranean",
+          "guests": 24,
+          "budgetMode": "per-person",
+          "budgetAmount": 18.0,
+          "deliveryMode": "delivery",
+          "occasion": "office lunch",
+          "minimum": "200",
+          "sort": "recommended",
+          "createdAt": "2026-04-16T19:58:53Z"
+        }
+      ]
+    },
+    {
+      "id": "USR-2003",
+      "name": "Sunny Bhatt",
+      "email": "bhatel@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "bhatel-republic",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2004",
+      "name": "Bricklane Manager",
+      "email": "bricklane@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "bricklane-tandoor",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2005",
+      "name": "Cinder Manager",
+      "email": "cinder@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "cinder-and-sage",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2006",
+      "name": "GreenFork Manager",
+      "email": "greenfork@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "greenfork-deli",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2007",
+      "name": "Ops Demo",
+      "email": "auto-import-test@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "auto-import-test-kitchen",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2008",
+      "name": "Status Demo",
+      "email": "persist-import-status@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "persist-import-status-kitchen",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2009",
+      "name": "Audit Owner",
+      "email": "audit-trail-kitchen@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "audit-trail-kitchen",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    },
+    {
+      "id": "USR-2010",
+      "name": "Audit Approval Test",
+      "email": "approval-audit-kitchen@gathertray.local",
+      "role": "restaurant",
+      "restaurantSlug": "approval-audit-kitchen",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "ISS-4",
+      "order": "GT-3022",
+      "issue": "Need confirmation on delivery arrival window for front desk handoff.",
+      "owner": "Support",
+      "priority": "High",
+      "status": "Resolved",
+      "createdByEmail": "buyer@gathertray.local",
+      "createdByRole": "customer",
+      "createdAt": "2026-04-16T16:52:38Z",
+      "updatedAt": "2026-04-16T16:53:13Z"
+    },
+    {
+      "order": "GT-3021",
+      "issue": "Delivery arrival window needs confirmation",
+      "owner": "Ops team",
+      "priority": "Medium",
+      "id": "ISS-1",
+      "status": "Open",
+      "createdAt": "2026-04-16T16:51:10Z",
+      "updatedAt": "2026-04-16T16:51:10Z"
+    },
+    {
+      "order": "GT-3011",
+      "issue": "Refund request on missing utensils",
+      "owner": "Support",
+      "priority": "Low",
+      "id": "ISS-2",
+      "status": "Open",
+      "createdAt": "2026-04-16T16:51:10Z",
+      "updatedAt": "2026-04-16T16:51:10Z"
+    },
+    {
+      "order": "GT-2998",
+      "issue": "Restaurant menu photo approval pending",
+      "owner": "Merchant success",
+      "priority": "Low",
+      "id": "ISS-3",
+      "status": "Open",
+      "createdAt": "2026-04-16T16:51:10Z",
+      "updatedAt": "2026-04-16T16:51:10Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "REV-1",
+      "orderId": "GT-3022",
+      "restaurantSlug": "bricklane-tandoor",
+      "restaurantName": "Bricklane Tandoor",
+      "customerEmail": "buyer@gathertray.local",
+      "customerName": "Unassigned lead",
+      "rating": 5,
+      "comment": "Excellent buffet quality and very smooth delivery handoff.",
+      "createdAt": "2026-04-17T07:23:52Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NTF-12",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Order status updated",
+      "body": "GT-3022 is now Completed.",
+      "entityType": "order",
+      "entityId": "GT-3022",
+      "createdAt": "2026-05-12T12:23:50Z"
+    },
+    {
+      "id": "NTF-11",
+      "userEmail": "approval-audit-kitchen@gathertray.local",
+      "title": "Restaurant application approved",
+      "body": "Approval Audit Kitchen has been approved and can now be managed inside GatherTray. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "entityType": "application",
+      "entityId": "APP-1007",
+      "createdAt": "2026-05-12T12:23:07Z"
+    },
+    {
+      "id": "NTF-10",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Order status updated",
+      "body": "GT-3022 is now In prep.",
+      "entityType": "order",
+      "entityId": "GT-3022",
+      "createdAt": "2026-05-12T12:21:31Z"
+    },
+    {
+      "id": "NTF-9",
+      "userEmail": "audit-trail-kitchen@gathertray.local",
+      "title": "Restaurant application approved",
+      "body": "Audit Trail Kitchen has been approved and can now be managed inside GatherTray. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "entityType": "application",
+      "entityId": "APP-1006",
+      "createdAt": "2026-05-12T12:17:08Z"
+    },
+    {
+      "id": "NTF-8",
+      "userEmail": "persist-import-status@gathertray.local",
+      "title": "Restaurant application approved",
+      "body": "Persist Import Status Kitchen has been approved and can now be managed inside GatherTray. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "entityType": "application",
+      "entityId": "APP-1005",
+      "createdAt": "2026-05-06T05:35:55Z"
+    },
+    {
+      "id": "NTF-7",
+      "userEmail": "auto-import-test@gathertray.local",
+      "title": "Restaurant application approved",
+      "body": "Auto Import Test Kitchen has been approved and can now be managed inside GatherTray.",
+      "entityType": "application",
+      "entityId": "APP-1004",
+      "createdAt": "2026-05-04T04:38:58Z"
+    },
+    {
+      "id": "NTF-6",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Order request received",
+      "body": "Your GatherTray request GT-3024 for Bhatel Republic has been submitted.",
+      "entityType": "order",
+      "entityId": "GT-3024",
+      "createdAt": "2026-04-21T03:08:19Z"
+    },
+    {
+      "id": "NTF-5",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Order request received",
+      "body": "Your GatherTray request GT-3023 for GreenFork Deli has been submitted.",
+      "entityType": "order",
+      "entityId": "GT-3023",
+      "createdAt": "2026-04-20T03:39:24Z"
+    },
+    {
+      "id": "NTF-4",
+      "userEmail": "hello@sunmesakitchen.com",
+      "title": "Restaurant application needs updates",
+      "body": "Your application APP-1001 needs changes before approval. Note: Please upload full compliance documents and clarify menu package serving ranges.",
+      "entityType": "application",
+      "entityId": "APP-1001",
+      "createdAt": "2026-04-18T04:26:10Z"
+    },
+    {
+      "id": "NTF-3",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Order status updated",
+      "body": "GT-3022 is now Completed.",
+      "entityType": "order",
+      "entityId": "GT-3022",
+      "createdAt": "2026-04-17T06:47:01Z"
+    },
+    {
+      "id": "NTF-2",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Support ticket created",
+      "body": "ISS-4 was opened for order GT-3022.",
+      "entityType": "order",
+      "entityId": "GT-3022",
+      "createdAt": "2026-04-16T16:52:38Z"
+    },
+    {
+      "id": "NTF-1",
+      "userEmail": "buyer@gathertray.local",
+      "title": "Order request received",
+      "body": "Your GatherTray order request GT-3022 has been saved and sent to the restaurant.",
+      "entityType": "order",
+      "entityId": "GT-3022",
+      "createdAt": "2026-04-16T00:00:00Z"
+    }
+  ],
+  "emailLog": [
+    {
+      "id": "EML-14",
+      "to": "buyer@gathertray.local",
+      "subject": "GatherTray order update: GT-3022",
+      "body": "GT-3022 is now Completed.",
+      "status": "queued",
+      "createdAt": "2026-05-12T12:23:50Z"
+    },
+    {
+      "id": "EML-13",
+      "to": "approval-audit-kitchen@gathertray.local",
+      "subject": "GatherTray application approved",
+      "body": "Approval Audit Kitchen has been approved and can now be managed inside GatherTray. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "status": "queued",
+      "createdAt": "2026-05-12T12:23:07Z"
+    },
+    {
+      "id": "EML-12",
+      "to": "approval-audit-kitchen@gathertray.local",
+      "subject": "GatherTray application received",
+      "body": "Your restaurant application APP-1007 has been received and is pending review.",
+      "status": "queued",
+      "createdAt": "2026-05-12T12:22:54Z"
+    },
+    {
+      "id": "EML-11",
+      "to": "buyer@gathertray.local",
+      "subject": "GatherTray order update: GT-3022",
+      "body": "GT-3022 is now In prep.",
+      "status": "queued",
+      "createdAt": "2026-05-12T12:21:31Z"
+    },
+    {
+      "id": "EML-10",
+      "to": "audit-trail-kitchen@gathertray.local",
+      "subject": "GatherTray application approved",
+      "body": "Audit Trail Kitchen has been approved and can now be managed inside GatherTray. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "status": "queued",
+      "createdAt": "2026-05-12T12:17:08Z"
+    },
+    {
+      "id": "EML-9",
+      "to": "audit-trail-kitchen@gathertray.local",
+      "subject": "GatherTray application received",
+      "body": "Your restaurant application APP-1006 has been received and is pending review.",
+      "status": "queued",
+      "createdAt": "2026-05-12T12:17:08Z"
+    },
+    {
+      "id": "EML-8",
+      "to": "persist-import-status@gathertray.local",
+      "subject": "GatherTray application approved",
+      "body": "Persist Import Status Kitchen has been approved and can now be managed inside GatherTray. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "status": "queued",
+      "createdAt": "2026-05-06T05:35:55Z"
+    },
+    {
+      "id": "EML-7",
+      "to": "persist-import-status@gathertray.local",
+      "subject": "GatherTray application received",
+      "body": "Your restaurant application APP-1005 has been received and is pending review.",
+      "status": "queued",
+      "createdAt": "2026-05-06T05:35:45Z"
+    },
+    {
+      "id": "EML-6",
+      "to": "auto-import-test@gathertray.local",
+      "subject": "GatherTray application approved",
+      "body": "Auto Import Test Kitchen has been approved and can now be managed inside GatherTray.",
+      "status": "queued",
+      "createdAt": "2026-05-04T04:38:58Z"
+    },
+    {
+      "id": "EML-5",
+      "to": "auto-import-test@gathertray.local",
+      "subject": "GatherTray application received",
+      "body": "Your restaurant application APP-1004 has been received and is pending review.",
+      "status": "queued",
+      "createdAt": "2026-05-04T04:38:50Z"
+    },
+    {
+      "id": "EML-4",
+      "to": "demo-website-kitchen-2@gathertray.local",
+      "subject": "GatherTray application received",
+      "body": "Your restaurant application APP-1003 has been received and is pending review.",
+      "status": "queued",
+      "createdAt": "2026-05-02T06:53:14Z"
+    },
+    {
+      "id": "EML-3",
+      "to": "demo-website-kitchen@gathertray.local",
+      "subject": "GatherTray application received",
+      "body": "Your restaurant application APP-1002 has been received and is pending review.",
+      "status": "queued",
+      "createdAt": "2026-05-02T06:52:58Z"
+    },
+    {
+      "id": "EML-2",
+      "to": "buyer@gathertray.local",
+      "subject": "GatherTray order request received",
+      "body": "Your GatherTray request GT-3024 for Bhatel Republic has been submitted.",
+      "status": "queued",
+      "createdAt": "2026-04-21T03:08:19Z"
+    },
+    {
+      "id": "EML-1",
+      "to": "buyer@gathertray.local",
+      "subject": "GatherTray order request received",
+      "body": "Your GatherTray request GT-3023 for GreenFork Deli has been submitted.",
+      "status": "queued",
+      "createdAt": "2026-04-20T03:39:24Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-4",
+      "actorEmail": "admin@gathertray.local",
+      "actorRole": "admin",
+      "action": "admin.backup_exported",
+      "targetType": "backup",
+      "targetId": "2026-05-16T05:45:40Z",
+      "detail": "Exported admin backup snapshot with sanitized user/session data",
+      "createdAt": "2026-05-16T05:45:40Z"
+    },
+    {
+      "id": "AUD-3",
+      "actorEmail": "admin@gathertray.local",
+      "actorRole": "admin",
+      "action": "order.updated",
+      "targetType": "order",
+      "targetId": "GT-3022",
+      "detail": "Status changed from In prep to Completed",
+      "createdAt": "2026-05-12T12:23:50Z"
+    },
+    {
+      "id": "AUD-2",
+      "actorEmail": "admin@gathertray.local",
+      "actorRole": "admin",
+      "action": "application.approved",
+      "targetType": "application",
+      "targetId": "APP-1007",
+      "detail": "Restaurant application approved. Imported 4 package(s) automatically from the restaurant website during approval.",
+      "createdAt": "2026-05-12T12:23:07Z"
+    },
+    {
+      "id": "AUD-1",
+      "actorEmail": "admin@gathertray.local",
+      "actorRole": "admin",
+      "action": "order.updated",
+      "targetType": "order",
+      "targetId": "GT-3022",
+      "detail": "Status changed from Completed to In prep",
+      "createdAt": "2026-05-12T12:21:31Z"
+    }
+  ]
+}

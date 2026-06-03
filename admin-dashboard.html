@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Admin Dashboard</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="admin-dashboard">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./demo.html">Demo Hub</a>
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./marketplace.html">Open marketplace</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Operations view</p>
+          <h1>Manage the marketplace like a real business.</h1>
+          <p class="hero-text">This is the ops layer for support, marketplace health, restaurant quality, and growth across the launch city.</p>
+        </div>
+      </section>
+
+      <section class="dashboard-metrics" id="admin-metrics"></section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Restaurant approvals</p>
+          <h2>Partner onboarding queue</h2>
+        </div>
+        <div class="issue-grid" id="admin-applications"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Approved partners</p>
+          <h2>Recent onboarding outcomes</h2>
+          <p class="hero-text">Track website connection and import results after restaurants go live.</p>
+        </div>
+        <div class="issue-grid" id="admin-approved-applications"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Users</p>
+          <h2>Accounts across the platform</h2>
+        </div>
+        <div class="table-like" id="admin-users"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Restaurants</p>
+          <h2>Listing health</h2>
+        </div>
+        <div class="table-like" id="admin-restaurants"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Orders</p>
+          <h2>Marketplace order queue</h2>
+          <div class="section-toolbar">
+            <button class="button button-secondary" id="export-orders" type="button">Export orders CSV</button>
+            <p id="export-status"></p>
+          </div>
+        </div>
+        <div class="table-like" id="admin-orders"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Live queue</p>
+          <h2>Operational issues and follow-up</h2>
+        </div>
+        <div class="issue-grid" id="admin-issues"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Email outbox</p>
+          <h2>Queued outbound communications</h2>
+        </div>
+        <div class="table-like" id="admin-email-log"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Security</p>
+          <h2>Recent auth activity</h2>
+          <p class="hero-text">Monitor sign-ins, failed attempts, rate limits, and password changes from one ops view.</p>
+        </div>
+        <div class="dashboard-metrics" id="admin-security-summary"></div>
+        <div class="table-like" id="admin-security-events"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Backups</p>
+          <h2>Export a marketplace snapshot</h2>
+          <div class="section-toolbar">
+            <button class="button button-subtle" id="create-backup" type="button">Create server backup</button>
+            <button class="button button-secondary" id="export-backup" type="button">Download backup JSON</button>
+            <p id="backup-status"></p>
+          </div>
+        </div>
+        <div class="issue-grid compact-issue-grid" id="admin-backup-summary"></div>
+        <div class="table-like" id="admin-saved-backups"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Audit log</p>
+          <h2>Recent critical actions</h2>
+        </div>
+        <div class="table-like" id="admin-audit-log"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

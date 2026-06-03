@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e1d18">
+  <title>GatherTray Restaurant Dashboard</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="restaurant-dashboard">
+  <div class="site-frame">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-badge">GT</span>
+        <span class="brand-text">
+          <strong>GatherTray</strong>
+          <span>office catering marketplace</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="./demo.html">Demo Hub</a>
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./order.html">Order Builder</a>
+        <a href="./restaurant-signup.html">Restaurant Signup</a>
+        <a href="./restaurant-portal.html">Restaurant Portal</a>
+        <a href="./restaurant-dashboard.html">Restaurant Dashboard</a>
+        <a href="./admin-dashboard.html">Admin Ops</a>
+        <a href="./account.html">Account</a>
+      </nav>
+      <a class="button button-primary topbar-cta" href="./restaurant.html?slug=bhatel-republic">View restaurant profile</a>
+    </header>
+
+    <main>
+      <section class="hero hero-compact">
+        <div class="hero-copy">
+          <p class="eyebrow">Merchant tools</p>
+          <h1>Restaurant dashboard for orders, menus, and payouts.</h1>
+          <p class="hero-text">This is the merchant-facing view that convinces restaurants GatherTray is more than another lead source.</p>
+        </div>
+      </section>
+
+      <section class="dashboard-metrics" id="restaurant-metrics"></section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Setup status</p>
+          <h2>Website and menu readiness</h2>
+          <p class="hero-text">This gives restaurants a clear view of whether their website is connected, what GatherTray imported, and what still needs cleanup.</p>
+        </div>
+        <div class="issue-grid compact-grid" id="restaurant-setup-status"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Incoming orders</p>
+          <h2>What the kitchen team sees</h2>
+        </div>
+        <div class="table-like" id="restaurant-orders"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

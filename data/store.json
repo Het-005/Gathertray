@@ -1240,6 +1240,22 @@
       "savedSearches": [
 
       ]
+    },
+    {
+      "id": "USR-2011",
+      "name": "het",
+      "email": "het@gmail.com",
+      "role": "customer",
+      "favorites": [
+
+      ],
+      "savedSearches": [
+
+      ],
+      "passwordHash": "74099c60e4883e926b783c461cb34a8a76257067768a138288152d1597f1b4f5",
+      "passwordSalt": "8ac2716ed041198760c2016c7afe9fda",
+      "passwordAlgo": "pbkdf2-sha256",
+      "passwordIterations": 120000
     }
   ],
   "sessions": [
@@ -1937,6 +1953,16 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "AUD-10",
+      "actorEmail": "het@gmail.com",
+      "actorRole": "customer",
+      "action": "auth.signup_created",
+      "targetType": "user",
+      "targetId": "USR-2011",
+      "detail": "Self-serve account created from 127.0.0.1",
+      "createdAt": "2026-08-08T21:26:48Z"
+    },
     {
       "id": "AUD-9",
       "actorEmail": "buyer@gathertray.local",
